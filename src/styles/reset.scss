@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+
+  @media (max-width: 1840px) {
+    width: 90vw;
+  }
+
+  @media (max-width: 1610px) {
+    width: 95vw;
+  }
+}
+
+.movies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 12rem;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.error {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(167, 0, 0);
+}

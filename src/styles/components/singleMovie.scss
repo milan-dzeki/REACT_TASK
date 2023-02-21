@@ -1,0 +1,77 @@
+.movie {
+  width: 70rem;
+  background-color: #ccc;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem;
+
+  @media (max-width: 1520px) {
+    width: 60rem;
+  }
+
+  &__title {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding: 1rem 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  &__img {
+    height: 20rem;
+    width: 60rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    flex: 0 0 20rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__desc {
+    font-size: 1.6rem;
+
+    @media (max-width: 1520px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    &-num {
+      color: white;
+      font-size: 1.6rem;
+    }
+
+    &-icon {
+      color: yellow;
+      font-size: 2rem;
+      display: flex;
+      margin-left: 1rem;
+    }
+  }
+}
